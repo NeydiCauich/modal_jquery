@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap');
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.ancho{
+  max-width: 1200px;
+  margin: auto;
+}
+body{
+  font-family: helvetica;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333;
+}
+header{
+  background-color: #fdf0d4;
+  text-align: center;
+  display:flex;
+  justify-content: center;
+}
+.alineacion figure{
+  width:250px;
+
+}
+.alineacion figure img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
+
+.alineacion{
+  width: 250px;
+}
+.contenido{
+  display:flex;
+  justify-content: space-between;
+  border-bottom: 60px #fa767d solid;
+}
+.blanco{
+  background-color:white;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  width: 100%;
+  height: 80vh;
+}
+.titulos{
+  width: 550px;
+ 
+}
+h2{
+  font-family: 'Archivo', sans-serif;
+  font-weight:600;
+  font-size: 30px;
+}
+.our{
+  color:gray;
+  font-style: italic;
+  font-family: 'Kaushan Script', cursive;
+}
+.passion{
+  font-family: 'Archivo', sans-serif;
+}
+.texto_pequeño{
+  font-size: 13px;
+  color:rgb(129, 129, 129);
+}
+
+
+.botones{
+  display: flex;
+  width: 550px;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.btn_rojo{
+  background-color:#fa767d;
+  text-decoration: none;
+  color:white;
+  padding:10px 20px;
+  border-radius: 50px;
+  display:inline-block;
+  transition: all 0.5s ease;
+  margin:10px;
+}
+.btn_borde{
+  background-color:#ffffff;
+  text-decoration: none;
+  color:#333;
+  padding:10px 20px;
+  border-radius: 50px;
+  display:inline-block;
+  transition: all 0.5s ease;
+  margin:10px;
+  border:1px solid gray;
+}
+.gris{
+  background-color:rgb(238, 236, 236);
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+  flex-direction:row;
+}
+.foto1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.foto1 figure{
+  width:200px;
+}
+.foto1 figure img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  border-radius:50%;
+}
+.nombre{
+  text-align:center;
+}
+.nombre h3{
+  font-family: 'Archivo', sans-serif;
+  font-size: 20px;
+  color:#fa767d;
+}
+.logos{
+  
+  text-align:center;
+}
+.logos i{
+  padding:5px;
+  color:rgb(97, 97, 97);
+}
+.btn_rosado{
+  background-color:#fa767d;
+  text-decoration: none;
+  color:white;
+  padding:10px 10px;
+  border-radius: 50px;
+  margin:10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.rojo{
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  cursor: pointer;
+  padding-left:450px;
+}
+.contenidomodal{
+  display: none;
+  background-color: rgba(0, 0, 0, .5);
+  color: white;
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  position: fixed;
+  z-index: 10;
+  overflow: auto;
+  top: 0;
+  left: 0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  display:none;
+  
+}
+.titulo h2{
+  padding: 10px;
+ 
+  
+}
+.estructuramodal{
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+  color: #333;
+  box-shadow: 0 0 10px #333;
+  width:500px;
+  height:500px;
+  margin:5px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.estructuramodal img{
+  width: 200px;
+}
+.afuera{
+  display:flex;
+  flex-direction:column;
+ justify-content:center;
+ align-items:center;
+
+}
+input {
+  border-radius: 50px;
+  border: 1px rgb(0, 0, 0) solid;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 90%;
+  color: white;
+  font-family: 'Archivo', sans-serif;
+  background-color: #f8f6f7;
+}
+textarea {
+  border-radius: 20px;
+  border: 1px rgb(0, 0, 0) solid;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 90%;
+  min-height: 200px;
+  background-color:#ffffff;
+  resize: none;
+  color: rgb(0, 0, 0);
+  font-family: 'Archivo', sans-serif;
+}
+@media screen and (max-width:480px){
+  .alineacion figure img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    width:250px;
+  }
+  
+  .alineacion{
+    width: 150px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+  }
+  .blanco{
+    background-color:white;
+    display:flex;
+    justify-content: center;
+    height:100%;
+    width:100%;
+    align-items:center;
+  
+  }
+  .titulos{
+    width: 300px;
+    justify-content:center;
+    margin:5px;
+   
+  }
+  .contenido{
+    display:flex;
+    justify-content: space-between;
+    border-bottom: 60px #fa767d solid;
+    flex-wrap: wrap;
+  }
+  .botones{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .btn_rojo{
+    background-color:#fa767d;
+    text-decoration: none;
+    color:white;
+    padding:5px 10px;
+    border-radius: 50px;
+    display:inline-block;
+    transition: all 0.5s ease;
+    margin:10px;
+  }
+  .btn_borde{
+    background-color:#ffffff;
+    text-decoration: none;
+    color:#333;
+    border:1px gray solid;
+    padding:5px 10px;
+    border-radius: 50px;
+    display:inline-block;
+    transition: all 0.5s ease;
+    margin:10px;
+  }
+  .gris{
+    background-color:rgb(238, 236, 236);
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+  }
+ 
+  .foto1 figure{
+    width:150px;
+
+    
+  }
+  .foto1 figure img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-radius:50%;
+  }
+.foto1{
+  width:100%;
+}
+.rojo{
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  cursor: pointer;
+  padding-left:250px;
+}
+.contenidomodal{
+  display: none;
+  background-color: rgba(0, 0, 0, .5);
+  color: white;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 10;
+  overflow: auto;
+  top: 0;
+  left: 0;
+  justify-content:left;
+  align-items:center;
+  text-align: center;
+  
+}
+.titulo h2{
+  padding: 10px;
+ 
+  
+}
+.estructuramodal{
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+  color: #333;
+  box-shadow: 0 0 10px #333;
+  width: 300px;
+}
+
+  
+.estructuramodal img{
+  width: 200px;
+}.afuera{
+  display:flex;
+  flex-direction:column;
+ justify-content:center;
+ align-items:center;
+ margin:15px;
+ width:300px;
+
+}
+.btn_rosado{
+  background-color:#fa767d;
+  text-decoration: none;
+  color:white;
+  padding:10px 10px;
+  border-radius: 50px;
+  margin:0px;
+  font-size: 14px;
+  font-weight: bold;
+}
+}
+

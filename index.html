@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src='https://kit.fontawesome.com/2ee0245f3d.js' crossorigin='anonymous'></script>
+  <link rel="stylesheet" href="estilos.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <div class="alineacion">
+      <figure>
+        <img class=""src="imagenes/logo.jpg" alt="logo_GYM">
+      </figure>
+    </div>
+  </header>
+  <section class="contenido">
+    <article class="blanco">
+     <div class="titulos">
+       <p class="our">our Team</p>
+       <h2>A Dedicated Team of Experts</h2>
+     <br>
+     <p class="passion">Passion,experience and a fierce commitment to education are the cornerstones of our success in the beauty industry</p>
+     <br>
+     <p class="texto_pequeño">We believe that being the largest SPA in the area is not enough in itselft to satisfy the needs of our customers. For this reason we have built up a staff of specialized professionals who are pround to welcome you to our hotel, present What We Do, listen to your needs and guarantee well-being and relaxion during your stay at our SPA Resort.</p>
+     <br>
+     <p class="texto_pequeño">Everyone in our team is a certifed specialist capable of delivering a unique service of high quality you won't find anywhere else in modern spa and resort industry.</p>
+     <br>
+     <div class="botones">
+       <div>
+     <a href="#" class="btn_rojo" id="Btn">LEARN MORE</a>
+    </div>
+    <div>
+     <a href="#" class="btn_borde">VIEW ALL TEAM</a>
+    </div>
+    </div>
+    </div>
+    </article>
+
+    <article class="gris">
+   
+      <div class="foto1">
+        <figure >
+          <img src="imagenes/foto1.jpg" alt="">
+        </figure>
+        <div class="nombre">
+        <h3>Jesica Cooper</h3>
+        <p class="texto_pequeño">Estetician</p>
+      </div>
+        <div class="logos">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-pinterest"></i>
+        </div>
+        <a href="#" class="btn_rosado">GET IN TOUCH</a>
+      </div>
+      <div class="foto1">
+        <figure >
+          <img src="imagenes/foto2.jpg" alt="">
+        </figure>
+        <div class="nombre">
+        <h3>Robert Wagner</h3>
+        <p class="texto_pequeño">Hairdresser</p>
+      </div>
+        <div class="logos">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-pinterest"></i>
+        </div>
+        <a href="#" class="btn_rosado">GET IN TOUCH</a>
+      </div>
+<!--MODAL -->
+
+    </article>
+  </section>
+  <section id="modal" class="contenidomodal">
+    <div class="afuera">
+      <i id="cerrarbtn"  class="rojo fa-solid fa-square-xmark "></i>
+      
+    <div class="estructuramodal">
+      <div class="titulo">
+        <h2>Contac Us</h2>
+       
+      </div>
+      <div class="info">
+        <p>If you any questions concerting our services, pleasse fill out the contact form below</p>
+        <br>
+      </div>
+      <div class="formulario ">
+        <form action="enviar.php" method="post">
+          <input type="text" placeholder="Name*" required>
+          <input type="email" placeholder="E-mail*" required>
+          <textarea name="" id="" placeholder="Message*" required></textarea>
+          <div id="envio">
+            <a href="#" class="btn_rosado">SUBMIT</a>
+         
+          </button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  </section>
+<!-- funcion modal -->
+  <script>
+    var mostrarmodal = document.getElementById("modal") ;
+    var cerrarmodal = document.getElementById("cerrarbtn");
+    var btnejecutar = document.getElementById("Btn");
+  
+
+    btnejecutar.onclick = function(){
+      mostrarmodal.style.display = "block";
+    }
+
+    cerrarmodal.onclick = function(){
+      mostrarmodal.style.display = "none";
+    }
+
+    window.onclick = function (event) {
+      if (event.target == mostrarmodal) {
+        mostrarmodal.style.display = "none";
+      }
+    };
+
+  </script>
+
+
+
+
+
+  
+</body>
+</html>
